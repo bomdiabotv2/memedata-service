@@ -21,6 +21,7 @@
   "homepage": "https://github.com/bomdiabotv2/memedata-service#readme",
   "devDependencies": {
     "@types/node": "^18.11.0",
+    "@types/sharp": "^0.31.0",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.25.0",
@@ -33,6 +34,8 @@
   "dependencies": {
     "@types/node-fetch": "^2.6.2",
     "dotenv": "^16.0.3",
-    "node-fetch": "^2.6.7"
+    "jimp": "^0.16.2",
+    "node-fetch": "^2.6.7",
+    "sharp": "^0.31.1"
   }
 }

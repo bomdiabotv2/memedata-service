@@ -1,13 +1,16 @@
-import { fetchImageByQuery } from './unsplashedService/api';
+import imageHandler from './imageHandler';
+import { fetchImageByQuery } from './unsplashService/api';
 
 (() => {
   fetchImageByQuery({
     queryString: 'sunrise',
     page: Math.floor((Math.random() * 10))
   }).then((response) => {
-    console.log(response.results.length);
+    imageHandler(response.results[0].urls.regular).then((response) => {
 
-    console.log(response.results[0].urls.regular);
+    }).catch((error) => {
+      console.log(error);
+    });
   }).catch((error) => {
     console.log(error);
   });
